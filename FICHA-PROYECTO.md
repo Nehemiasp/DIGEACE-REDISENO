@@ -1,7 +1,6 @@
 # Ficha del proyecto · Rediseño del inicio de DIGEACE
 
-Entrega 1 de 5 (brief, sección 9): ficha del proyecto y propuesta visual con el hero construido.
-**Punto de revisión: no se avanza a las demás secciones hasta recibir su aprobación.**
+Entrega 1 (brief, sección 9): ficha del proyecto y propuesta visual. Con la aprobación para seguir, el resto del inicio, los estados, la página de ejemplo y el reporte están construidos: ver `REPORTE-ENTREGA.md`.
 
 > El Estándar Lumacode v2 no venía en los archivos adjuntos (solo el brief y capturas del sitio actual), así que esta ficha sigue la estructura del brief. Si el estándar exige otros campos, se completan en la siguiente ronda.
 
@@ -53,7 +52,7 @@ Para verlo: abrir `index.html` en el navegador.
 1. "Procesos" pasa a llamarse **Trámites** en la navegación (brief 5.1; validar con la institución).
 2. Los cuatro "más solicitados" son los del brief (Reposición de títulos, Equivalencias, Equiparaciones, Papelería de fin de ciclo); falta elegirlos con visitas reales.
 3. La agrupación de trámites por tipo de solicitante es la propuesta del brief (5.3).
-4. Los enlaces de la navegación y de "más solicitados" apuntan a anclas (`#tramites`, etc.) que se construyen en la siguiente entrega; hoy no llevan a ningún sitio.
+4. Solo el trámite de ejemplo (Reposición de títulos y diplomas) tiene página; los demás trámites avisan que su página no forma parte de la propuesta.
 
 ## 7. Marcadores pendientes y puntos a revisar
 
@@ -62,12 +61,12 @@ Para verlo: abrir `index.html` en el navegador.
 | **Logos** | No se pudieron descargar del sitio (la red del entorno lo bloquea). Los logos de Gobierno/MINEDUC/DIGEACE se recortaron de una captura de pantalla y tienen baja resolución. **Reemplazar por los archivos oficiales (SVG o PNG al tamaño de uso).** |
 | **Foto del equipo** | Recortada de la captura de "Quiénes somos" (468 × 366 px). Funciona a este tamaño, pero hay que sustituirla por la original en WebP/AVIF. |
 | **Cifra de trámites** | El brief habla de 24 trámites, pero la lista agrupada de 5.3 suma **23** (6 + 10 + 4 + 3). El sitio actual muestra "24 resultados" porque cuenta "Unidad de Seguimiento y Monitoreo", que el brief saca de la lista. Propongo que el contador diga **23 trámites**; si falta uno, hay que identificarlo con la institución. |
-| Horario, teléfono, correo | No se inventan. Irán como marcadores visibles en "Atención al público" (siguiente entrega). |
+| Horario, teléfono, correo | No se inventan. Van como marcadores visibles en "Atención al público". |
 | Aviso de propuesta | Franja azul superior; quitar si la institución adopta el diseño. |
 
 ## 8. Cambios técnicos para quien mantenga el sitio (adelanto)
 
-La lista completa irá en el reporte de entrega (entrega 5). Por ahora, de lo visto en esta entrega:
+La lista completa está en `REPORTE-ENTREGA.md`. Adelanto:
 
 - Eliminar el video del hero (exportado de WhatsApp), el carrusel y el CSS personalizado que sobrescribe estilos.
 - Cargar una sola familia tipográfica con los pesos usados.
@@ -76,4 +75,4 @@ La lista completa irá en el reporte de entrega (entrega 5). Por ahora, de lo vi
 
 ## 9. Siguiente paso
 
-Cuando apruebe esta entrega (o indique cambios) continúo con el resto del inicio, en el orden de la página: lista de trámites agrupada, comunicados y noticias, quiénes somos, atención al público y pie.
+Revisión de la entrega completa (`REPORTE-ENTREGA.md`).

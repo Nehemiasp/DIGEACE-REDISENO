@@ -98,11 +98,23 @@
     abrir();
   }
 
+  /* Con la lista de trámites en la misma página, el buscador la filtra; si no, envía el formulario. */
+  function enviar() {
+    if (!window.DigeaceLista) return false;
+    cerrar();
+    window.DigeaceLista.buscar(input.value.trim());
+    return true;
+  }
+
   function elegir(i) {
     input.value = resultados[i].nombre;
     cerrar();
-    form.submit();
+    if (!enviar()) form.submit();
   }
+
+  form.addEventListener("submit", function (e) {
+    if (enviar()) e.preventDefault();
+  });
 
   input.addEventListener("input", pintar);
   input.addEventListener("focus", function () { if (input.value.trim()) pintar(); });
