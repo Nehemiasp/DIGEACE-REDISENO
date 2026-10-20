@@ -9,7 +9,7 @@ Entrega 1 (brief, sección 9): ficha del proyecto y propuesta visual. Con la apr
 | Campo | Valor |
 |---|---|
 | Proyecto | Rediseño de la página de inicio de https://digeace.mineduc.gob.gt/ |
-| Naturaleza | **Propuesta conceptual.** No consta que la institución la haya solicitado. La página lleva un aviso visible: "No es el sitio oficial de DIGEACE ni de MINEDUC". Debe quitarse solo si la institución la adopta. |
+| Naturaleza | **Propuesta conceptual.** No consta que la institución la haya solicitado. Para pasarla a Figma se quitó el aviso de la página; no debe presentarse como sitio oficial de DIGEACE ni de MINEDUC. |
 | Trabajo principal de la página | Encontrar el trámite correcto y llegar a sus requisitos |
 | Idea central | "Una ventanilla clara": sobria, directa y confiable. El elemento memorable es el buscador de trámites en la primera pantalla |
 | Formato de entrega | Prototipo HTML/CSS (sin dependencias de compilación). Figma queda a criterio del coordinador |
@@ -52,17 +52,16 @@ Para verlo: abrir `index.html` en el navegador.
 1. "Procesos" pasa a llamarse **Trámites** en la navegación (brief 5.1; validar con la institución).
 2. Los cuatro "más solicitados" son los del brief (Reposición de títulos, Equivalencias, Equiparaciones, Papelería de fin de ciclo); falta elegirlos con visitas reales.
 3. La agrupación de trámites por tipo de solicitante es la propuesta del brief (5.3).
-4. Solo el trámite de ejemplo (Reposición de títulos y diplomas) tiene página; los demás trámites avisan que su página no forma parte de la propuesta.
+4. Solo el trámite de ejemplo (Reposición de títulos y diplomas) tiene página; los demás enlaces apuntan a `#`.
 
-## 7. Marcadores pendientes y puntos a revisar
+## 7. Datos ficticios y puntos a revisar
 
 | Tema | Detalle |
 |---|---|
 | **Logos** | No se pudieron descargar del sitio (la red del entorno lo bloquea). Los logos de Gobierno/MINEDUC/DIGEACE se recortaron de una captura de pantalla y tienen baja resolución. **Reemplazar por los archivos oficiales (SVG o PNG al tamaño de uso).** |
 | **Foto del equipo** | Recortada de la captura de "Quiénes somos" (468 × 366 px). Funciona a este tamaño, pero hay que sustituirla por la original en WebP/AVIF. |
 | **Cifra de trámites** | El brief habla de 24 trámites, pero la lista agrupada de 5.3 suma **23** (6 + 10 + 4 + 3). El sitio actual muestra "24 resultados" porque cuenta "Unidad de Seguimiento y Monitoreo", que el brief saca de la lista. Propongo que el contador diga **23 trámites**; si falta uno, hay que identificarlo con la institución. |
-| Horario, teléfono, correo | No se inventan. Van como marcadores visibles en "Atención al público". |
-| Aviso de propuesta | Franja azul superior; quitar si la institución adopta el diseño. |
+| Horario, teléfono, correo, mapa | **Ficticios**, para que la página se importe completa a Figma. Reemplazar con los datos reales de la institución (ver `REPORTE-ENTREGA.md`). |
 
 ## 8. Cambios técnicos para quien mantenga el sitio (adelanto)
 

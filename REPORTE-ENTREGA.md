@@ -1,6 +1,6 @@
 # Reporte de entrega · Rediseño del inicio de DIGEACE
 
-Propuesta conceptual. No es el sitio oficial de DIGEACE ni de MINEDUC (la página lleva un aviso visible que se quita si la institución la adopta).
+Propuesta conceptual, no solicitada por la institución. Para pasarla a Figma, la página no lleva avisos ni marcadores: los datos faltantes son ficticios (ver sección 6). No debe presentarse como sitio oficial de DIGEACE ni de MINEDUC.
 
 Para verla: abrir `index.html` en el navegador. Las capturas de revisión están en `preview/`.
 
@@ -41,7 +41,7 @@ Secciones del inicio, en el orden actual: encabezado · hero con buscador · tr�
 | Una familia tipográfica y una familia de azules; sin naranja | Cumple (Public Sans; sin naranja) |
 | Sin degradados, vidrio, sombras de tarjeta, píldoras decorativas, flechas ni emojis | Cumple. Las únicas sombras están en el desplegable de sugerencias y en el menú móvil. Los filtros son botones rectangulares de 6 px |
 | Noticias con títulos completos y fechas legibles | Cumple |
-| Atención al público con dirección y marcadores | Cumple |
+| Atención al público con dirección y datos de contacto | Cumple, con horario, teléfono y correo ficticios |
 | Redes una sola vez; sin barra flotante ni contador de visitas | Cumple (solo en el pie) |
 | Trato de usted | Cumple |
 | `alt` en todas las imágenes con contenido; contraste AA; teclado | `alt` en las 11 imágenes de las tres páginas. Contraste calculado (ver abajo). Teclado probado en el buscador (flechas, Enter, Esc) y foco visible en filas, enlaces y campos; filtros, grupos y menú son botones y elementos nativos |
@@ -58,7 +58,7 @@ No se midieron LCP ni CLS: el prototipo corre desde archivos locales y la cifra 
 3. **Quiénes somos sin valores ni galería.** Se eliminó la galería de valores. No se convirtió en línea de texto porque no se tiene el texto institucional de misión, visión y valores.
 4. **Corrección de texto.** En los pasos del trámite de ejemplo, el sitio actual dice "Unidad de Acreditamiento y Certificación". Se escribió "Acreditación".
 5. **Descripciones de trámites** resumidas por mí a partir del texto del sitio actual (máximo 120 caracteres). Hay que validarlas con la institución, sobre todo las de los trámites cuya página no se vio.
-6. **Aviso en la lista:** al hacer clic en un trámite sin página, el prototipo avisa que su página no forma parte de la propuesta y enlaza al ejemplo. Solo "Reposición de títulos y diplomas" tiene página.
+6. **Páginas de trámite:** solo "Reposición de títulos y diplomas" tiene página. Los otros 22 enlaces de la lista apuntan a `#`.
 
 ## 5. Supuestos y puntos a validar con la institución
 
@@ -72,15 +72,15 @@ No se midieron LCP ni CLS: el prototipo corre desde archivos locales y la cifra 
 | Colores | Propuesta; validar con el manual de identidad de gobierno vigente |
 | Texto de quiénes somos | Tomado del sitio actual (incluye el Acuerdo Gubernativo 225-2008). Falta el texto de misión, visión y valores |
 
-## 6. Marcadores pendientes (visibles en la página)
+## 6. Datos e imágenes ficticios (reemplazar antes de publicar)
 
-| Dónde | Qué falta |
+| Dónde | Qué es ficticio |
 |---|---|
-| Atención al público | Horario, teléfono, correo institucional, mapa o foto de la entrada |
-| Pie | Direcciones de Facebook, YouTube y Sistema BPM MINEDUC (los enlaces apuntan al propio pie) |
-| Trámite de ejemplo | Enlaces de los tres servicios en línea y de los dos videos; base legal |
-| Noticias | Los enlaces y "Ver todas las noticias" apuntan a la sección; falta la página de noticias |
-| Encabezado y pie | Logos oficiales (ver abajo) |
+| Atención al público | Horario (lunes a viernes, de 8:00 a 16:00), teléfono ((502) 2411-8900) y correo (atencion.digeace@mineduc.gob.gt). La dirección sí es la del sitio actual |
+| Atención al público | Mapa: ilustración propia (`assets/mapa-sede.webp`), no refleja la ubicación real de las calles. El botón "Cómo llegar" sí abre Google Maps con la dirección |
+| Pie | Facebook, YouTube y Sistema BPM MINEDUC apuntan a `#` |
+| Trámite de ejemplo | Los tres servicios en línea y los dos videos apuntan a `#`. En la base legal, la Ley de Educación Nacional (Decreto 12-91) y el Acuerdo Gubernativo 225-2008 son reales; el "Acuerdo Ministerial No. 1234-2024" es inventado |
+| Noticias | Los enlaces y "Ver todas las noticias" apuntan a la sección; no existe la página de noticias |
 
 ## 7. Material gráfico provisional
 

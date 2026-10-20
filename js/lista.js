@@ -12,7 +12,6 @@
   var grupos = Array.prototype.slice.call(seccion.querySelectorAll(".grupo"));
   var filas = Array.prototype.slice.call(seccion.querySelectorAll(".lista li"));
   var vacio = seccion.querySelector(".sin-resultados");
-  var aviso = seccion.querySelector(".aviso-fila");
   var total = filas.length;
   var filtro = "todos";
   var movil = window.matchMedia("(max-width: 767px)");
@@ -59,7 +58,6 @@
 
     vacio.hidden = visibles !== 0;
     borrar.hidden = !input.value;
-    aviso.hidden = true;
     contador.textContent = visibles === total
       ? total + " trámites"
       : visibles + (visibles === 1 ? " trámite" : " trámites") + " de " + total;
@@ -92,15 +90,6 @@
     elegirFiltro("todos");
     aplicar();
     input.focus();
-  });
-
-  /* Las páginas de los trámites, salvo el de ejemplo, no forman parte de esta propuesta. */
-  seccion.addEventListener("click", function (e) {
-    var enlace = e.target.closest("a.fila[data-pendiente]");
-    if (!enlace) return;
-    e.preventDefault();
-    aviso.hidden = false;
-    aviso.scrollIntoView({ block: "nearest" });
   });
 
   window.DigeaceLista = {
