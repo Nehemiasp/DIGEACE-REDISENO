@@ -67,7 +67,7 @@ No se midieron LCP ni CLS: el prototipo corre desde archivos locales y la cifra 
 | Tema | Detalle |
 |---|---|
 | Nombre "Trámites" | Reemplaza "Procesos" en toda la navegación |
-| **Cifra de trámites** | El brief dice 24, pero la agrupación suma 23 (6 + 10 + 4 + 3). El sitio actual muestra "24 resultados" porque cuenta la Unidad de Seguimiento y Monitoreo. El contador del prototipo dice "23 trámites". Si falta uno, hay que identificarlo |
+| **Cifra de trámites** | Son 23 trámites visibles. El sitio actual muestra "24 resultados" porque cuenta la Unidad de Seguimiento y Monitoreo. El contador del prototipo dice "23 trámites". En el código del sitio hay un trámite más, "Registro de títulos y diplomas (años anteriores al 2005)", pero está comentado (oculto): validar con la institución si debe publicarse |
 | Trámites más solicitados | Son los cuatro del brief; falta elegirlos con visitas reales |
 | Agrupación por solicitante | Propuesta del brief; falta validarla |
 | **Organigrama** | Se armó a partir de una captura. La captura no deja claro de quién dependen la Subdirección General y las unidades. En el prototipo la Subdirección va como rama junto a las dos direcciones y las tres unidades aparecen aparte como "Unidades de la Dirección General". **Validar con el organigrama oficial** |
@@ -79,18 +79,20 @@ No se midieron LCP ni CLS: el prototipo corre desde archivos locales y la cifra 
 | Dónde | Qué es ficticio |
 |---|---|
 | Atención al público | Horario (lunes a viernes, de 8:00 a 16:00), teléfono ((502) 2411-8900) y correo (atencion.digeace@mineduc.gob.gt). La dirección sí es la del sitio actual |
-| Atención al público | Mapa: es un mapa de Google incrustado a partir de la dirección (no pude verificarlo desde este entorno, que bloquea esos servicios). Si no carga, se ve de fondo una ilustración propia (`assets/mapa-sede.webp`) que no refleja las calles reales. Al importar a Figma, el mapa incrustado no se captura: pegue una captura del mapa real como imagen |
+| Atención al público | Mapa: es un mapa de Google incrustado a partir de la dirección, verificado en navegador (muestra "MINEDUC, Ministerio de Educación"). Debajo hay una versión estática hecha con teselas de OpenStreetMap (`assets/mapa-sede.webp`, con su atribución) que se ve si el mapa interactivo no carga y sirve para importar a Figma, que no captura mapas incrustados |
 | Pie | Facebook, YouTube y Sistema BPM MINEDUC apuntan a `#` |
 | Trámite de ejemplo | Los tres servicios en línea y los dos videos apuntan a `#`. En la base legal, la Ley de Educación Nacional (Decreto 12-91) y el Acuerdo Gubernativo 225-2008 son reales; el "Acuerdo Ministerial No. 1234-2024" es inventado |
 | Noticias | Los enlaces y "Ver todas las noticias" apuntan a la sección; no existe la página de noticias |
 
-## 7. Material gráfico provisional
+## 7. Material gráfico
 
-El entorno no puede acceder al sitio, así que todo el material salió de las capturas que usted envió:
+Los logos y las fotos son los originales descargados del sitio actual (`digeace.mineduc.gob.gt/wp-content/uploads/`):
 
-- **Logos Gobierno / MINEDUC / DIGEACE:** recortados de una captura, con fondo quitado por proceso automático. Baja resolución. **Reemplazar por los archivos oficiales (SVG o PNG al tamaño de uso).**
-- **Foto del equipo** (hero y Quiénes somos): 468 × 366 px. Reemplazar por la original.
-- **Fotos de las tres noticias:** 246 × 164 px ampliadas al doble; se ven suaves. Hay que recortarlas desde las originales a 3:2 y en WebP o AVIF.
+- **Logos:** `Logotipo-MINEDUC-2024-2028_AZUL_H.png` y `Logotipo-Medico-Moderno-Azul-scaled-1.png`, recortados al contenido y reducidos a 220 px de alto. Van como dos imágenes con una línea vertical entre ellas. Si se necesitan en SVG o para fondos oscuros, hay que pedirlos a la institución.
+- **Foto del equipo:** de la página Quiénes somos, 1000 × 782 px.
+- **Fotos de las tres noticias:** las imágenes destacadas de cada noticia, recortadas a 3:2 (900 × 600 px).
+
+Sigue pendiente confirmar con la institución que estas imágenes se pueden reutilizar fuera de su sitio.
 
 ## 8. Cambios técnicos para quien mantenga el sitio
 
@@ -111,4 +113,4 @@ Estructura del prototipo: HTML estático, una hoja de estilos (`css/styles.css`)
 
 ## 9. Siguiente paso
 
-Revisión de esta entrega. Con sus comentarios, ajusto. Lo que más conviene resolver primero: cifra de trámites (23 o 24), organigrama oficial y archivos originales de logos y fotos.
+Revisión de esta entrega. Con sus comentarios, ajusto. Lo que más conviene resolver primero: organigrama oficial, si el trámite oculto de registro de títulos anteriores al 2005 debe publicarse, y los permisos de uso de logos y fotos.

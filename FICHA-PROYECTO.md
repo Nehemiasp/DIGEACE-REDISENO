@@ -58,10 +58,9 @@ Para verlo: abrir `index.html` en el navegador.
 
 | Tema | Detalle |
 |---|---|
-| **Logos** | No se pudieron descargar del sitio (la red del entorno lo bloquea). Los logos de Gobierno/MINEDUC/DIGEACE se recortaron de una captura de pantalla y tienen baja resolución. **Reemplazar por los archivos oficiales (SVG o PNG al tamaño de uso).** |
-| **Foto del equipo** | Recortada de la captura de "Quiénes somos" (468 × 366 px). Funciona a este tamaño, pero hay que sustituirla por la original en WebP/AVIF. |
-| **Cifra de trámites** | El brief habla de 24 trámites, pero la lista agrupada de 5.3 suma **23** (6 + 10 + 4 + 3). El sitio actual muestra "24 resultados" porque cuenta "Unidad de Seguimiento y Monitoreo", que el brief saca de la lista. Propongo que el contador diga **23 trámites**; si falta uno, hay que identificarlo con la institución. |
-| Horario, teléfono, correo, mapa | **Ficticios**, para que la página se importe completa a Figma. Reemplazar con los datos reales de la institución (ver `REPORTE-ENTREGA.md`). |
+| **Logos y fotos** | Son los archivos originales descargados del sitio actual (logo de MINEDUC, logo de DIGEACE, foto del equipo y fotos de las noticias), recortados y optimizados a WebP/PNG. Falta confirmar con la institución que se pueden reutilizar. |
+| **Cifra de trámites** | Son **23** trámites visibles en la lista. El sitio actual muestra "24 resultados" porque cuenta "Unidad de Seguimiento y Monitoreo", que no es un trámite. En el código del sitio existe además "Registro de títulos y diplomas (años anteriores al 2005)", pero está comentado (oculto), por eso no se incluyó. Validar con la institución si debe volver a publicarse. |
+| Horario, teléfono, correo | **Ficticios**, para que la página se importe completa a Figma. Reemplazar con los datos reales de la institución (ver `REPORTE-ENTREGA.md`). |
 
 ## 8. Cambios técnicos para quien mantenga el sitio (adelanto)
 

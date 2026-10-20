@@ -79,10 +79,9 @@ a { color: var(--azul-accion); }
   min-height: 88px;
 }
 
-.encabezado__logo img {
-  width: auto;
-  height: 56px;
-}
+.logos, .encabezado__logo { display: flex; align-items: center; gap: var(--e2); }
+.logos img, .encabezado__logo img { width: auto; height: 60px; }
+.logos__linea { align-self: stretch; margin-block: 6px; border-left: 1px solid var(--linea); }
 
 .menu-boton { display: none; }
 
@@ -134,7 +133,7 @@ a { color: var(--azul-accion); }
 
 .hero__texto { grid-column: 1 / span 8; }
 .hero__foto { grid-column: 9 / span 4; margin: 0; }
-.hero__foto img { width: 100%; aspect-ratio: 468 / 366; object-fit: cover; }
+.hero__foto img { width: 100%; aspect-ratio: 1000 / 782; object-fit: cover; }
 
 h1 {
   margin: 0 0 var(--e2);
@@ -287,7 +286,8 @@ h1 {
   .contenedor { padding-inline: var(--e2); }
 
   .encabezado__fila { min-height: 64px; gap: var(--e2); }
-  .encabezado__logo img { height: 36px; }
+  .encabezado__logo img { height: 30px; }
+  .encabezado__logo { gap: var(--e1); }
 
   .menu-boton {
     display: inline-flex;
@@ -483,14 +483,14 @@ button.enlace-texto:hover { color: var(--azul-institucional); }
   background: var(--fondo); border: 1px solid var(--azul-institucional); border-radius: var(--radio);
 }
 .boton-secundario:hover { background: var(--azul-institucional); color: #fff; }
-.atencion__mapa { grid-column: 8 / span 5; aspect-ratio: 3 / 2; background: #E1E8F1 url("../assets/mapa-sede.webp") center / cover; border: 1px solid var(--linea); border-radius: var(--radio); overflow: hidden; }
+.atencion__mapa { grid-column: 8 / span 5; aspect-ratio: 4 / 3; background: #E1E8F1 url("../assets/mapa-sede.webp") center / cover; border: 1px solid var(--linea); border-radius: var(--radio); overflow: hidden; }
 .atencion__mapa iframe { display: block; width: 100%; height: 100%; border: 0; }
 
 /* Pie */
 .pie { background: var(--fondo); border-top: 1px solid var(--linea); }
 .pie__rejilla { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: var(--e3); row-gap: var(--e5); padding-block: var(--e6); }
 .pie__identidad { grid-column: 1 / span 5; }
-.pie__identidad img { width: auto; height: 56px; margin-bottom: var(--e2); }
+.pie__identidad .logos { margin-bottom: var(--e2); }
 .pie__identidad p { max-width: 44ch; color: var(--texto-secundario); }
 .pie__col { grid-column: span 3; }
 .pie__col:nth-of-type(3) { grid-column: 9 / span 3; }
@@ -570,7 +570,7 @@ a.org__caja:hover { background: var(--superficie); }
 .intro__texto { grid-column: 1 / span 7; }
 .intro__texto p + p { margin-top: var(--e2); }
 .intro__foto { grid-column: 9 / span 4; margin: 0; }
-.intro__foto img { width: 100%; aspect-ratio: 468 / 366; object-fit: cover; }
+.intro__foto img { width: 100%; aspect-ratio: 1000 / 782; object-fit: cover; }
 
 @media (max-width: 1023px) {
   .quienes__texto, .quienes__direcciones, .atencion__datos, .atencion__mapa, .intro__texto, .intro__foto,
