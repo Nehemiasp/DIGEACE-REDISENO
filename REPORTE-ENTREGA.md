@@ -16,7 +16,7 @@ Para verla: abrir `index.html` en el navegador. Las capturas de revisión están
 
 Además, `quienes-somos.html` contiene el organigrama en HTML accesible (destino de "Conozca nuestra estructura") y la Unidad de Seguimiento y Monitoreo con su propio destino.
 
-Secciones del inicio, en el orden actual: encabezado · hero con buscador · trámites (lista agrupada) · comunicados y noticias · quiénes somos · atención al público · pie.
+Secciones del inicio, en el orden actual: encabezado · hero con buscador · trámites (tarjetas agrupadas) · comunicados y noticias · quiénes somos · atención al público · pie.
 
 ## 2. Estados mostrados
 
@@ -53,6 +53,8 @@ No se midieron LCP ni CLS: el prototipo corre desde archivos locales y la cifra 
 
 ## 4. Decisiones que se apartan del brief o lo interpretan
 
+0. **Trámites en tarjetas, a pedido del cliente.** El brief proponía filas separadas por líneas; se cambió a tarjetas de 3 columnas en escritorio, 2 en tablet y 1 en móvil. Mantienen el sistema: borde de 1 px, radio de 6 px, sin sombra, y toda la tarjeta es el enlace. Cada tarjeta lleva un código (PER-01, CEN-01, CUR-01, PRO-01) inventado, que alude a los "códigos de trámite" del brief; quitarlo si no se quiere.
+
 1. **Grupos plegables en móvil.** Con la lista de 23 trámites completa, la página móvil medía 9.338 px, más que la actual. En móvil cada grupo se pliega (muestra su nombre y cuántos trámites tiene) y la búsqueda o el filtro abren los grupos con resultados. En escritorio todo está abierto.
 2. **Encabezados H3/H4.** Los nombres de grupo son H3 y los trámites H4, para que la jerarquía sea válida. El brief pedía H3 por trámite, pero con grupos eso salta niveles.
 3. **Quiénes somos sin valores ni galería.** Se eliminó la galería de valores. No se convirtió en línea de texto porque no se tiene el texto institucional de misión, visión y valores.
@@ -77,7 +79,7 @@ No se midieron LCP ni CLS: el prototipo corre desde archivos locales y la cifra 
 | Dónde | Qué es ficticio |
 |---|---|
 | Atención al público | Horario (lunes a viernes, de 8:00 a 16:00), teléfono ((502) 2411-8900) y correo (atencion.digeace@mineduc.gob.gt). La dirección sí es la del sitio actual |
-| Atención al público | Mapa: ilustración propia (`assets/mapa-sede.webp`), no refleja la ubicación real de las calles. El botón "Cómo llegar" sí abre Google Maps con la dirección |
+| Atención al público | Mapa: es un mapa de Google incrustado a partir de la dirección (no pude verificarlo desde este entorno, que bloquea esos servicios). Si no carga, se ve de fondo una ilustración propia (`assets/mapa-sede.webp`) que no refleja las calles reales. Al importar a Figma, el mapa incrustado no se captura: pegue una captura del mapa real como imagen |
 | Pie | Facebook, YouTube y Sistema BPM MINEDUC apuntan a `#` |
 | Trámite de ejemplo | Los tres servicios en línea y los dos videos apuntan a `#`. En la base legal, la Ley de Educación Nacional (Decreto 12-91) y el Acuerdo Gubernativo 225-2008 son reales; el "Acuerdo Ministerial No. 1234-2024" es inventado |
 | Noticias | Los enlaces y "Ver todas las noticias" apuntan a la sección; no existe la página de noticias |
