@@ -425,10 +425,9 @@ button.enlace-texto:hover { color: var(--azul-institucional); }
   text-decoration: none;
   background: var(--fondo);
   border: 1px solid var(--linea);
-  border-top: 3px solid var(--azul-institucional);
   border-radius: var(--radio);
 }
-.tarjeta:hover { border-color: var(--azul-accion); border-top-color: var(--azul-accion); }
+.tarjeta:hover { border-color: var(--azul-accion); }
 .tarjeta:focus-visible { outline-offset: 2px; }
 .tarjeta__codigo { margin-bottom: var(--e1); font-size: 14px; font-weight: 600; letter-spacing: .04em; color: var(--texto-secundario); }
 .tarjeta__nombre { margin-bottom: var(--e1); }
